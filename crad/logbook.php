@@ -1,7 +1,7 @@
 <?php
 
 ?>
-<title>Module 3</title>
+<title>Logbook</title>
 <?php include('../partials/connection.php'); ?>
 <?php include('../partials/head.php'); ?>
 

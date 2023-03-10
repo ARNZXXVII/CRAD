@@ -2,7 +2,7 @@
 require_once('../partials/connection.php');
 
 ?>
-<title>Module 3</title>
+<title>Panel Evaluation Form</title>
 <?php include('../partials/head.php'); ?>
 
 <!-- ======= Header ======= -->

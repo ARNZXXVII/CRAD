@@ -1,7 +1,7 @@
 <?php
 
 ?>
-<title>Module 3</title>
+<title>Admin Audit</title>
 <?php include('../partials/head.php'); ?>
 
 <!-- ======= Header ======= -->

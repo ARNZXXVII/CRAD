@@ -1,23 +1,23 @@
 <?php
 
 ?>
-  <title>Module 3</title>
-  <?php include('../partials/head.php'); ?>
+<title>User Profile</title>
+<?php include('../partials/head.php'); ?>
 
-  <!-- ======= Header ======= -->
+<!-- ======= Header ======= -->
 
-  <?php include('../partials/header.php'); ?>
+<?php include('../partials/header.php'); ?>
 
-  <!-- End Header -->
+<!-- End Header -->
 
-  <!-- ======= Sidebar ======= -->
-  <?php include('../partials/sidebar.php'); ?>
+<!-- ======= Sidebar ======= -->
+<?php include('../partials/sidebar.php'); ?>
 
-  <!-- End Sidebar-->
+<!-- End Sidebar-->
 
-  <main id="main" class="main" >
+<main id="main" class="main">
 
-	<!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT -->
 
   <div class="pagetitle">
     <h1>Users Profile</h1>
@@ -34,16 +34,15 @@
     </ol>
   </nav>
 
-  </main><!-- End #main -->
+</main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
+<!-- ======= Footer ======= -->
 
-  <?php include ('../partials/footer.php'); ?>
+<?php include('../partials/footer.php'); ?>
 
-  <!-- End Footer -->
+<!-- End Footer -->
 
-  <script>
-
+<script>
   var x = document.getElementById('mod2')
   x.className = "active";
 
@@ -52,7 +51,6 @@
 
   var h = document.getElementById('components-nav')
   h.className = "nav-content collapse show";
+</script>
 
-  </script>
-
-  </html>
+</html>

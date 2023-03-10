@@ -1,5 +1,5 @@
 <?php
-    include('../partials/head.php');
+include('../partials/head.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -80,9 +80,9 @@
                       </div>
                     </div>
                     <div class="col-12">
-                        <button class="btn btn-primary w-100" type="submit">Login</button>
+                      <button class="btn btn-primary w-100" type="submit">Login</button>
                     </div>
-            
+
                   </form>
 
                 </div>
