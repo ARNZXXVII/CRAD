@@ -1,23 +1,23 @@
 <?php
 
 ?>
-  <title>Module 3</title>
-  <?php include('../partials/head.php'); ?>
+<title>Module 3</title>
+<?php include('../partials/head.php'); ?>
 
-  <!-- ======= Header ======= -->
+<!-- ======= Header ======= -->
 
-  <?php include('../partials/header.php'); ?>
+<?php include('../partials/header.php'); ?>
 
-  <!-- End Header -->
+<!-- End Header -->
 
-  <!-- ======= Sidebar ======= -->
-  <?php include('../partials/sidebar.php'); ?>
+<!-- ======= Sidebar ======= -->
+<?php include('../partials/sidebar.php'); ?>
 
-  <!-- End Sidebar-->
+<!-- End Sidebar-->
 
-  <main id="main" class="main" >
+<main id="main" class="main">
 
-	<!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT -->
 
   <div class="pagetitle">
     <h1>OR checking</h1>
@@ -37,16 +37,17 @@
     </ol>
   </nav>
 
-  </main><!-- End #main -->
+  first edit to commit in github
 
-  <!-- ======= Footer ======= -->
+</main><!-- End #main -->
 
-  <?php include ('../partials/footer.php'); ?>
+<!-- ======= Footer ======= -->
 
-  <!-- End Footer -->
+<?php include('../partials/footer.php'); ?>
 
-  <script>
+<!-- End Footer -->
 
+<script>
   var x = document.getElementById('mod2')
   x.className = "active";
 
@@ -55,7 +56,6 @@
 
   var h = document.getElementById('components-nav')
   h.className = "nav-content collapse show";
+</script>
 
-  </script>
-
-  </html>
+</html>
