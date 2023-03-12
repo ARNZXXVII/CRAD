@@ -1,5 +1,5 @@
 <?php
-
+require_once('../partials/connection.php');
 ?>
 <title>Panel Evaluation Committee</title>
 <?php include('../partials/head.php'); ?>
@@ -36,6 +36,56 @@
       </li>
     </ol>
   </nav>
+
+  <section class="container card">
+    <h1 class="card-title">Defense Panel</h1>
+    <table class="table table-sm table-borderless table-hover">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Major</th>
+          <th>Experience</th>
+          <th>Sample</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        $sql = "SELECT * FROM panel_committee";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        if ($stmt->rowCount() > 0) {
+          while ($row = $stmt->fetch()) {
+
+
+        ?>
+            <tr>
+              <td><?php echo $row['last_name'] ?>, <?php echo $row['first_name'] ?></td>
+              <td><?php echo $row['qualification_two']; ?></td>
+              <td><?php echo $row['exp']; ?></td>
+              <td><?php echo $row['qualification_one']; ?></td>
+              <td><?php
+                  if ($row['qualification_one'] == 1) {
+                    echo '<span class="badge bg-danger">' . "Not Qualified" . '</span>';
+                  } else {
+                    echo '<span class="badge bg-success">' . "Qualified" . '</span>';
+                  }
+                  ?>
+              </td>
+              <td>
+                <button class="btn btn-primary">A</button>
+                <button class="btn btn-primary">B</button>
+              </td>
+            </tr>
+      </tbody>
+  <?php
+          }
+        }
+  ?>
+    </table>
+  </section>
 
 </main><!-- End #main -->
 

@@ -86,9 +86,9 @@ require_once('../partials/connection.php');
           <div class="form-floating mb-3">
             <select class="form-select" id="experience" name="exp">
               <option selected>1 year below</option>
-              <option value="1">1 - 2 years</option>
-              <option value="2">2 - 3 years</option>
-              <option value="3">3 years above</option>
+              <option>1 - 2 years</option>
+              <option>2 - 3 years</option>
+              <option>3 years above</option>
             </select>
             <label for="experience">Experience in IT</label>
             <div class="valid-feedback">

@@ -1,8 +1,7 @@
 <?php
-
+include('../partials/connection.php');
 ?>
 <title>Logbook</title>
-<?php include('../partials/connection.php'); ?>
 <?php include('../partials/head.php'); ?>
 
 <!-- ======= Header ======= -->
@@ -118,7 +117,7 @@
       const datetime = getFormattedDate();
       console.log(datetime)
 
-      fetch("saveLog.php", {
+      fetch("../partials/saveLog.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded"

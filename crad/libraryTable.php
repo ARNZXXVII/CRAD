@@ -45,9 +45,9 @@ require_once('../partials/connection.php');
     <section>
         <div class="card container">
             <p class="card-title">Search any keyword <span>from Author or Research Title</span> </p>
-            <div class="row">
-                <form action="libraryTable.php" method="GET" class="d-flex ">
-                    <div class="me-3 flex-grow-1">
+            <div>
+                <form action="libraryTable.php" method="GET" class="row">
+                    <div class="col-lg-8">
                         <div class="input-group mb-3">
                             <input type="text" name="search" value="<?php if (isset($_GET['search'])) {
                                                                         echo $_GET['search'];
@@ -55,7 +55,7 @@ require_once('../partials/connection.php');
                             <button type="submit" class="btn btn-primary">Search</button>
                         </div>
                     </div>
-                    <div>
+                    <div class="col-lg-4">
                         <div class="input-group mb-3">
                             <select name="department" id="departmentSelect" class="form-select" aria-label="Default select example">
                                 <option selected value="">Select</option>

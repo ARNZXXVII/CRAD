@@ -36,11 +36,10 @@ require_once('../partials/connection.php');
   </nav>
 
 
-  <section>
-    <table class="datatable">
+  <section class="card container">
+    <table class="table table-hover">
       <thead>
         <tr>
-          <th>Date Created</th>
           <th>First name</th>
           <th>Last name</th>
           <th>Email</th>
@@ -61,7 +60,6 @@ require_once('../partials/connection.php');
 
         ?>
             <tr>
-              <td><?php echo $row['date_created']; ?></td>
               <td><?php echo $row['first_name']; ?></td>
               <td><?php echo $row['last_name']; ?></td>
               <td><?php echo $row['email']; ?></td>
