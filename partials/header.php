@@ -185,9 +185,9 @@
           </li>
 
           <li>
-            <a class="dropdown-item d-flex align-items-center" href="#">
+            <a class="dropdown-item d-flex align-items-center" href="../partials/logout.php">
               <i class="bi bi-box-arrow-right"></i>
-              <span>Sign Out</span>
+              <span>Logout</span>
             </a>
           </li>
 
