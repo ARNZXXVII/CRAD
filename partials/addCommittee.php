@@ -11,7 +11,7 @@ $qualification_one = $_POST['qualification_one'];
 $qualification_two = $_POST['qualification_two'];
 
 if (isset($_POST['submit_committee'])) {
-    $sql = "INSERT INTO panel_committee (last_name, first_name, middle_name, exp, qualification_one, qualification_two)
+    $sql = "INSERT INTO crad_panel_committee (last_name, first_name, middle_name, exp, qualification_one, qualification_two)
     VALUES (?,?,?,?,?,?)";
 
     $stmt = $pdo->prepare($sql);

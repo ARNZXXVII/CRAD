@@ -1,5 +1,5 @@
 <?php
-
+include('../partials/connection.php');
 ?>
 <title>OR Checking</title>
 <?php include('../partials/head.php'); ?>
@@ -20,7 +20,7 @@
   <!-- MAIN CONTENT -->
 
   <div class="pagetitle">
-    <h1>OR checking</h1>
+    <h1>Payment Verification</h1>
   </div>
 
   <nav>
@@ -29,15 +29,78 @@
         <a href="index.php">Home</a>
       </li>
       <li class="breadcrumb-item">
-        Research Payment
+        <a href="paymentReports.php">Payment Reports</a>
       </li>
       <li class="breadcrumb-item active">
-        OR checking
+        Verification
       </li>
     </ol>
   </nav>
 
-  first edit to commit in github
+
+
+
+  <section class="card container col-md-6">
+    <div>
+      <h1 class="card-title">Input Student ID <span class="text-muted">| to verify payment</span></h1>
+      <form action="../partials/verify_payment.php" method="POST" class="row g-2 needs-validation" novalidate>
+        <div class="form-floating">
+          <input type="number" name="input1" class="form-control" id="first" placeholder="Student ID" required>
+          <label for="first">Student ID</label>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Enter Student ID!
+          </div>
+        </div>
+        <div class="form-floating">
+          <input type="number" name="input2" class="form-control" id="second" placeholder="Student ID" required>
+          <label for="second">Student ID</label>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Enter Student ID!
+          </div>
+        </div>
+        <div class="form-floating">
+          <input type="number" name="input3" class="form-control" id="third" placeholder="Student ID" required>
+          <label for="third">Student ID</label>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Enter Student ID!
+          </div>
+        </div>
+        <div class="form-floating">
+          <input type="number" name="input4" class="form-control" id="fourth" placeholder="Student ID" required>
+          <label for="fourth">Student ID</label>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Enter Student ID!
+          </div>
+        </div>
+        <div class="form-floating">
+          <input type="number" name="input5" class="form-control" id="fifth" placeholder="Student ID" required>
+          <label for="fifth">Student ID</label>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Enter Student ID!
+          </div>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-sm btn-primary btn-block" name="verify_payment">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
 
 </main><!-- End #main -->
 

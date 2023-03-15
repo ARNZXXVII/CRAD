@@ -73,7 +73,7 @@
                     <h6 class="col">
                       <?php
                       // Prepare a query to count the number of rows in the table
-                      $stmt = $pdo->prepare('SELECT COUNT(*) FROM logbook_table');
+                      $stmt = $pdo->prepare('SELECT COUNT(*) FROM crad_logbook_table');
 
                       // Execute the query and fetch the result
                       $stmt->execute();
@@ -120,7 +120,7 @@
                     <h6 class="col">
                       <?php
                       // Prepare a query to count the number of rows in the table
-                      $stmt = $pdo->prepare('SELECT COUNT(*) FROM library');
+                      $stmt = $pdo->prepare('SELECT COUNT(*) FROM crad_library');
 
                       // Execute the query and fetch the result
                       $stmt->execute();
@@ -200,7 +200,7 @@
                 </thead>
                 <tbody>
                   <?php
-                  $sql = "SELECT * FROM panel_committee";
+                  $sql = "SELECT * FROM crad_panel_committee ORDER BY comID DESC";
                   $stmt = $pdo->prepare($sql);
                   $stmt->execute();
 
@@ -223,13 +223,11 @@
                             ?>
                         </td>
                       </tr>
-
-
-                </tbody>
-            <?php
+                  <?php
                     }
                   }
-            ?>
+                  ?>
+                </tbody>
               </table>
 
             </div>

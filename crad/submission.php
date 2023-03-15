@@ -97,12 +97,8 @@ require_once('../partials/connection.php');
 
           <div class="col-12">
             <label for="inputNanme4" class="form-label">Research Title</label>
-            <input type="text" name="title" class="form-control" id="inputNanme4" required>
-          </div>
-
-          <div class="col-12">
-            <label for="inputEmail4" class="form-label">Author</label>
-            <input type="text" name="author" class="form-control" id="inputEmail4" required>
+            <!-- <input type="text" name="title" class="form-control" id="inputNanme4" required> -->
+            <textarea name="title" class="form-control" id="inputNanme4" cols="30" rows="5" required></textarea>
           </div>
 
           <div class="col-md-6">
@@ -116,7 +112,7 @@ require_once('../partials/connection.php');
             <label class="col-sm-6 col-form-label">Department</label>
             <div class="col-sm-12">
               <select name="department" class="form-select" aria-label="Default select example" required>
-                <option selected>Select</option>
+                <option selected value="">Select</option>
                 <option value="BSIT">BSIT</option>
                 <option value="BSHM">BSHM</option>
                 <option value="BSOA">BSOA</option>

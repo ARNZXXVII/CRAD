@@ -96,7 +96,7 @@ require_once('../partials/connection.php');
 
                         $searchKeyword = isset($_GET['search']) ? $_GET['search'] : '';
                         $departmentFilter = isset($_GET['department']) ? $_GET['department'] : null;
-                        $query = "SELECT * FROM library WHERE CONCAT(title,author) LIKE '%$searchKeyword%'";
+                        $query = "SELECT * FROM crad_library WHERE CONCAT(title) LIKE '%$searchKeyword%'";
                         if ($departmentFilter) {
                             $query = $query . 'AND department="' . $departmentFilter . '"';
                         }
@@ -116,7 +116,7 @@ require_once('../partials/connection.php');
                                     <td><?= $items['title']; ?></td>
                                     <td><?= $items['date']; ?></td>
                                     <td>
-                                        <a href="../uploads/<?php echo $items['upload_file']; ?>" target="_blank" class="btn btn-primary btn-sm d-grid">Open</a>
+                                        <a href="../uploads/<?php echo $items['upload_file']; ?>" target="_blank" class="btn btn-primary btn-sm d-grid"><span><i class="bi bi-folder2-open"></i>Open</span></a>
                                     </td>
                                 </tr>
                             <?php

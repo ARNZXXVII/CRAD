@@ -84,8 +84,9 @@ require_once('../partials/connection.php');
 
         <div class="col-md-4">
           <div class="form-floating mb-3">
-            <select class="form-select" id="experience" name="exp">
-              <option selected>1 year below</option>
+            <select class="form-select" id="experience" name="exp" required>
+              <option selected disabled value="">Select</option>
+              <option>1 year below</option>
               <option>1 - 2 years</option>
               <option>2 - 3 years</option>
               <option>3 years above</option>
@@ -99,8 +100,8 @@ require_once('../partials/connection.php');
 
         <div class="col-md-4">
           <div class="form-floating mb-3">
-            <select class="form-select" id="masters" name="qualification_one">
-              <option selected>select</option>
+            <select class="form-select" id="masters" name="qualification_one" required>
+              <option selected value="">select</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -114,8 +115,8 @@ require_once('../partials/connection.php');
 
         <div class="col-md-4">
           <div class="form-floating mb-3">
-            <select class="form-select" id="masters2" name="qualification_two">
-              <option selected>select</option>
+            <select class="form-select" id="masters2" name="qualification_two" required>
+              <option selected value="">select</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>

@@ -40,7 +40,7 @@ include('../partials/connection.php');
     <section class="card container">
         <div class="col-lg-12" style=" max-height: 500px; overflow: scroll;">
             <h1 class="card-title">Logbook table</h1>
-            <table id="logTable" class="table table-hover">
+            <table id="logTable" class="table table-hover datatable">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -51,7 +51,7 @@ include('../partials/connection.php');
                 </thead>
                 <tbody>
                     <?php
-                    $sql = "SELECT * FROM logbook_table ORDER BY log_datetime DESC";
+                    $sql = "SELECT * FROM crad_logbook_table ORDER BY log_datetime DESC";
                     $stmt = $pdo->prepare($sql);
                     $stmt->execute();
 

@@ -50,7 +50,7 @@ require_once('../partials/connection.php');
       </thead>
       <tbody>
         <?php
-        $sql = "SELECT * FROM users";
+        $sql = "SELECT * FROM crad_users";
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
 

@@ -51,7 +51,7 @@ require_once('../partials/connection.php');
 
     <div class="row">
       <?php
-      $sql = "SELECT * FROM library order by ID desc";
+      $sql = "SELECT * FROM crad_library order by ID desc";
       $stmt = $pdo->prepare($sql);
       $stmt->execute();
 

@@ -48,7 +48,7 @@
       <ul id="payment-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
         <li>
           <a href="orChecking.php">
-            <i class="bi bi-circle"></i><span>OR Checking</span>
+            <i class="bi bi-circle"></i><span>Payment Verification</span>
           </a>
         </li>
         <li>
@@ -112,17 +112,17 @@
       </a>
       <ul id="monitoring-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
         <li>
-          <a href="logbook.php">
-            <i class="bi bi-circle"></i><span>1</span>
+          <a href="monitoring.php">
+            <i class="bi bi-circle"></i><span>Defense Monitoring</span>
           </a>
         </li>
         <li>
-          <a href="createQRCode.php">
-            <i class="bi bi-circle"></i><span>2</span>
+          <a href="gallery.php">
+            <i class="bi bi-circle"></i><span>Gallery</span>
           </a>
         </li>
         <li>
-          <a href="logbookTable.php">
+          <a href="">
             <i class="bi bi-circle"></i><span>3</span>
           </a>
         </li>
@@ -130,31 +130,10 @@
     </li><!-- End Monitoring Nav --------------------------------------------------------------------------->
 
     <li class="nav-item">
-      <a class="nav-link collapsed" data-bs-target="#audit-nav" data-bs-toggle="collapse" href="#">
-        <i class="bi bi-stickies"></i><span>Audit Trail</span><i class="bi bi-chevron-down ms-auto"></i>
+      <a class="nav-link collapsed" href="AdminAudit.php">
+        <i class="bi bi-stickies"></i>
+        <span>Audit Trail</span>
       </a>
-      <ul id="audit-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-        <li>
-          <a href="coordinatorAudit.php">
-            <i class="bi bi-circle"></i><span>Coordinator History</span>
-          </a>
-        </li>
-        <li>
-          <a href="studentAudit.php">
-            <i class="bi bi-circle"></i><span>Student History</span>
-          </a>
-        </li>
-        <li>
-          <a href="AdminAudit.php">
-            <i class="bi bi-circle"></i><span>Admin History</span>
-          </a>
-        </li>
-        <li>
-          <a href="StaffAudit.php">
-            <i class="bi bi-circle"></i><span>Staff History</span>
-          </a>
-        </li>
-      </ul>
     </li><!-- End Audit trail Nav --------------------------------------------------------------------->
 
 

@@ -39,7 +39,7 @@ require_once('../partials/connection.php');
 
   <section class="container card">
     <h1 class="card-title">Defense Panel</h1>
-    <table class="table table-sm table-borderless table-hover">
+    <table class="table datatable">
       <thead>
         <tr>
           <th>Name</th>
@@ -52,11 +52,11 @@ require_once('../partials/connection.php');
       </thead>
       <tbody>
         <?php
-        $sql = "SELECT * FROM panel_committee";
+        $sql = "SELECT * FROM crad_panel_committee ORDER BY comID DESC";
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
 
-        if ($stmt->rowCount() > 0) {
+        if ($stmt->rowcount() > 0) {
           while ($row = $stmt->fetch()) {
 
 
@@ -79,11 +79,11 @@ require_once('../partials/connection.php');
                 <button class="btn btn-primary">B</button>
               </td>
             </tr>
-      </tbody>
-  <?php
+        <?php
           }
         }
-  ?>
+        ?>
+      </tbody>
     </table>
   </section>
 

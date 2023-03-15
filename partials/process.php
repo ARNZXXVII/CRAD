@@ -24,13 +24,13 @@
         return $filename;
     }
 
-    function save_to_database($pdo, $title, $author, $department, $filename)
+    function save_to_database($pdo, $title, $department, $filename)
     {
-        $sql = "INSERT INTO library (title, author, department, upload_file)
-            VALUES (?,?,?,?)";
+        $sql = "INSERT INTO crad_library (title, department, upload_file)
+            VALUES (?,?,?)";
 
         $stmt = $pdo->prepare($sql);
-        $stmt->execute(array($title, $author, $department, $filename));
+        $stmt->execute(array($title, $department, $filename));
     }
 
     // ------------------------------------ to add data to databse ---------------------------------------
@@ -38,7 +38,7 @@
         $target_dir = "../uploads/";
 
         $filename = do_upload($target_dir, $_FILES);
-        save_to_database($pdo, $_POST['title'], $_POST['author'], $_POST['department'], $filename);
+        save_to_database($pdo, $_POST['title'], $_POST['department'], $filename);
 
         header("Location: ../crad/library.php");
     }

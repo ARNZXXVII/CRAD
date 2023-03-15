@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 function save_to_database($pdo, $student_name, $student_id, $department, $datetime)
 {
     echo '<script>console.log(' . $datetime . ')</script>';
-    $sql = "INSERT INTO logbook_table (student_name, student_id, department, log_datetime)
+    $sql = "INSERT INTO crad_logbook_table (student_name, student_id, department, log_datetime)
             VALUES (?,?,?,?)";
 
     $stmt = $pdo->prepare($sql);

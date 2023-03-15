@@ -50,7 +50,7 @@ session_start();
     $password = $_POST['password'];
 
     // Check if username and password are correct
-    $stmt = $pdo->prepare("SELECT id, access FROM users WHERE username = :username AND password = :password");
+    $stmt = $pdo->prepare("SELECT id, access FROM crad_users WHERE username = :username AND password = :password");
     $stmt->bindParam(':username', $username);
     $stmt->bindParam(':password', $password);
     $stmt->execute();

@@ -28,11 +28,8 @@
       <li class="breadcrumb-item">
         <a href="index.php">Home</a>
       </li>
-      <li class="breadcrumb-item">
-        Audit Trail
-      </li>
       <li class="breadcrumb-item active">
-        Admin History
+        Activity History
       </li>
     </ol>
   </nav>
@@ -42,27 +39,24 @@
     <table class="datatable">
       <thead>
         <tr>
-          <th>ID</th>
+          <th>Date & Time</th>
           <th>User</th>
-          <th>Action</th>
+          <th>Activity</th>
           <th>Description</th>
-          <th>Date</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
+          <td>2023/02/20</td>
           <td>Admin</td>
           <td>Submit Document</td>
-          <td>Action Description</td>
-          <td>2023/02/20</td>
+          <td>Activity Description</td>
         </tr>
         <tr>
-          <td>2</td>
+          <td>2023/02/24</td>
           <td>User</td>
           <td>Open Document</td>
-          <td>Action Description</td>
-          <td>2023/02/24</td>
+          <td>Activity Description</td>
         </tr>
       </tbody>
     </table>

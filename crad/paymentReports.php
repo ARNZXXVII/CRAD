@@ -28,11 +28,12 @@
       <li class="breadcrumb-item">
         <a href="index.php">Home</a>
       </li>
-      <li class="breadcrumb-item">
-        Research Payment
+      <li class="breadcrumb-item active">
+        Payment Reports
       </li>
       <li class="breadcrumb-item active">
-        Payment reports
+        <a href="orChecking.php">Verification</a>
+
       </li>
     </ol>
   </nav>
