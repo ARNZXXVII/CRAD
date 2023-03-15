@@ -2,7 +2,7 @@
 include('../partials/connection.php');
 ?>
 <title>Logbook Table</title>
-<?php include('../partials/head.php'); ?>
+<?php include('../partials/crad-head.php'); ?>
 
 <!-- ======= Header ======= -->
 

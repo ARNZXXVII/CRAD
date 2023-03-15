@@ -3,7 +3,7 @@ require_once('../partials/connection.php');
 ?>
 
 <title>Submission of Research</title>
-<?php include('../partials/head.php'); ?>
+<?php include('../partials/crad-head.php'); ?>
 
 <!-- ======= Header ======= -->
 
@@ -47,18 +47,20 @@ require_once('../partials/connection.php');
       <button onclick="showDiv('div2')" class="btn btn-sm btn-primary">Second Sem Submission</button>
     </div>
 
-    <div id="div1" style="display: none;" class="col-lg-6">
-      <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-secondary">Approval Sheet</button>
-        <button type="button" class="btn btn-sm btn-secondary">Chapter 123</button>
+    <div class="mb-3">
+      <div id="div1" style="display: none;" class="col-lg-6">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-secondary">Approval Sheet</button>
+          <button type="button" class="btn btn-sm btn-secondary">Chapter 123</button>
+        </div>
       </div>
-    </div>
 
-    <div id="div2" style="display: none;" class="col-lg-6">
-      <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-secondary">Bookbind</button>
-        <button type="button" class="btn btn-sm btn-secondary">Video</button>
-        <button type="button" class="btn btn-sm btn-secondary">CD</button>
+      <div id="div2" style="display: none;" class="col-lg-6">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-secondary">Bookbind</button>
+          <button type="button" class="btn btn-sm btn-secondary">Video</button>
+          <button type="button" class="btn btn-sm btn-secondary">CD</button>
+        </div>
       </div>
     </div>
 
@@ -86,6 +88,8 @@ require_once('../partials/connection.php');
 
     }
   </script>
+
+
 
   <section>
     <div class="card">

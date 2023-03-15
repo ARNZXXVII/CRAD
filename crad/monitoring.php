@@ -2,7 +2,7 @@
 
 ?>
 <title>Defense Monitoring</title>
-<?php include('../partials/head.php'); ?>
+<?php include('../partials/crad-head.php'); ?>
 
 <!-- ======= Header ======= -->
 

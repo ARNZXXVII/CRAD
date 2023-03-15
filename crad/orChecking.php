@@ -2,7 +2,7 @@
 include('../partials/connection.php');
 ?>
 <title>OR Checking</title>
-<?php include('../partials/head.php'); ?>
+<?php include('../partials/crad-head.php'); ?>
 
 <!-- ======= Header ======= -->
 
@@ -36,70 +36,6 @@ include('../partials/connection.php');
       </li>
     </ol>
   </nav>
-
-
-
-
-  <section class="card container col-md-6">
-    <div>
-      <h1 class="card-title">Input Student ID <span class="text-muted">| to verify payment</span></h1>
-      <form action="../partials/verify_payment.php" method="POST" class="row g-2 needs-validation" novalidate>
-        <div class="form-floating">
-          <input type="number" name="input1" class="form-control" id="first" placeholder="Student ID" required>
-          <label for="first">Student ID</label>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-          <div class="invalid-feedback">
-            Enter Student ID!
-          </div>
-        </div>
-        <div class="form-floating">
-          <input type="number" name="input2" class="form-control" id="second" placeholder="Student ID" required>
-          <label for="second">Student ID</label>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-          <div class="invalid-feedback">
-            Enter Student ID!
-          </div>
-        </div>
-        <div class="form-floating">
-          <input type="number" name="input3" class="form-control" id="third" placeholder="Student ID" required>
-          <label for="third">Student ID</label>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-          <div class="invalid-feedback">
-            Enter Student ID!
-          </div>
-        </div>
-        <div class="form-floating">
-          <input type="number" name="input4" class="form-control" id="fourth" placeholder="Student ID" required>
-          <label for="fourth">Student ID</label>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-          <div class="invalid-feedback">
-            Enter Student ID!
-          </div>
-        </div>
-        <div class="form-floating">
-          <input type="number" name="input5" class="form-control" id="fifth" placeholder="Student ID" required>
-          <label for="fifth">Student ID</label>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-          <div class="invalid-feedback">
-            Enter Student ID!
-          </div>
-        </div>
-        <div class="d-grid">
-          <button type="submit" class="btn btn-sm btn-primary btn-block" name="verify_payment">Submit</button>
-        </div>
-      </form>
-    </div>
-  </section>
 
 
 </main><!-- End #main -->

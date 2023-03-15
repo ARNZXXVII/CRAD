@@ -1,6 +1,6 @@
 <?php
 include('../partials/connection.php');
-include('../partials/head.php');
+include('../partials/crad-head.php');
 session_start();
 ?>
 <!DOCTYPE html>

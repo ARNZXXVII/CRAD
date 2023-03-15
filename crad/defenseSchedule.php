@@ -2,7 +2,7 @@
 
 ?>
 <title>Defense Schedule</title>
-<?php include('../partials/head.php'); ?>
+<?php include('../partials/crad-head.php'); ?>
 
 <!-- ======= Header ======= -->
 

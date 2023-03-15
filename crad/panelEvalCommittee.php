@@ -2,7 +2,7 @@
 require_once('../partials/connection.php');
 ?>
 <title>Panel Evaluation Committee</title>
-<?php include('../partials/head.php'); ?>
+<?php include('../partials/crad-head.php'); ?>
 
 <!-- ======= Header ======= -->
 

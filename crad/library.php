@@ -2,7 +2,7 @@
 require_once('../partials/connection.php');
 ?>
 <title>Research Library</title>
-<?php include('../partials/head.php'); ?>
+<?php include('../partials/crad-head.php'); ?>
 
 <!-- ======= Header ======= -->
 
