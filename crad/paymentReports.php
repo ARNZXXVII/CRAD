@@ -32,7 +32,7 @@
         Payment Reports
       </li>
       <li class="breadcrumb-item active">
-        <a href="orChecking.php">Verification</a>
+        <a href="paymentVerification.php">Verification</a>
 
       </li>
     </ol>

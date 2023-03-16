@@ -47,13 +47,13 @@
       </a>
       <ul id="payment-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
         <li>
-          <a href="orChecking.php">
+          <a href="paymentVerification.php">
             <i class="bi bi-circle"></i><span>Payment Verification</span>
           </a>
         </li>
         <li>
           <a href="paymentReports.php">
-            <i class="bi bi-circle"></i><span>Payment Reports</span>
+            <i class="bi bi-circle"></i><span>Payment Verification Reports</span>
           </a>
         </li>
 

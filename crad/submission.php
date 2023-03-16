@@ -42,24 +42,71 @@ require_once('../partials/connection.php');
 
 
   <section>
-    <div class="btn-group col-lg-6 mb-2">
-      <button onclick="showDiv('div1')" class="btn btn-sm btn-primary">First Sem Submission</button>
-      <button onclick="showDiv('div2')" class="btn btn-sm btn-primary">Second Sem Submission</button>
-    </div>
 
     <div class="mb-3">
-      <div id="div1" style="display: none;" class="col-lg-6">
-        <div class="btn-group">
-          <button type="button" class="btn btn-sm btn-secondary">Approval Sheet</button>
-          <button type="button" class="btn btn-sm btn-secondary">Chapter 123</button>
+      <div class="btn-group col-lg-6 mb-2">
+        <button onclick="showDiv('div1')" class="btn btn-sm btn-primary">First Sem Submission</button>
+        <button onclick="showDiv('div2')" class="btn btn-sm btn-primary">Second Sem Submission</button>
+      </div>
+      <div id="div1" style="display: none;" class="col-lg-12">
+        <!-- first sem submission -->
+
+        <div class="card">
+          <div class="card-body mt-2">
+
+            <ul class="nav nav-tabs d-flex" id="myTabjustified2" role="tablist">
+              <li class="nav-item flex-fill" role="presentation">
+                <button class="nav-link w-100 active" id="home-tab2" data-bs-toggle="tab" data-bs-target="#home-justified2" type="button" role="tab" aria-controls="home" aria-selected="true">Approval Sheet</button>
+              </li>
+              <li class="nav-item flex-fill" role="presentation">
+                <button class="nav-link w-100" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#profile-justified2" type="button" role="tab" aria-controls="profile" aria-selected="false">Chapter 123</button>
+              </li>
+            </ul>
+            <div class="tab-content pt-2" id="myTabjustifiedContent2">
+              <div class="tab-pane fade show active" id="home-justified2" role="tabpanel" aria-labelledby="home-tab2">
+                Approval Sheet
+              </div>
+              <div class="tab-pane fade" id="profile-justified2" role="tabpanel" aria-labelledby="profile-tab2">
+                Chapter 123
+              </div>
+            </div>
+
+          </div>
         </div>
+
       </div>
 
-      <div id="div2" style="display: none;" class="col-lg-6">
-        <div class="btn-group">
-          <button type="button" class="btn btn-sm btn-secondary">Bookbind</button>
-          <button type="button" class="btn btn-sm btn-secondary">Video</button>
-          <button type="button" class="btn btn-sm btn-secondary">CD</button>
+      <div id="div2" style="display: none;" class="col-lg-12">
+        <!-- second sem submission -->
+
+        <div class="card">
+          <div class="card-body mt-2">
+
+            <ul class="nav nav-tabs d-flex" id="myTabjustified" role="tablist">
+              <li class="nav-item flex-fill" role="presentation">
+                <button class="nav-link w-100 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-justified" type="button" role="tab" aria-controls="home" aria-selected="true">Bookbind</button>
+              </li>
+              <li class="nav-item flex-fill" role="presentation">
+                <button class="nav-link w-100" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-justified" type="button" role="tab" aria-controls="profile" aria-selected="false">Video</button>
+              </li>
+              <li class="nav-item flex-fill" role="presentation">
+                <button class="nav-link w-100" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-justified" type="button" role="tab" aria-controls="contact" aria-selected="false">CD</button>
+              </li>
+            </ul>
+
+            <div class="tab-content pt-2" id="myTabjustifiedContent">
+              <div class="tab-pane fade show active" id="home-justified" role="tabpanel" aria-labelledby="home-tab">
+                Bookbind Form
+              </div>
+              <div class="tab-pane fade" id="profile-justified" role="tabpanel" aria-labelledby="profile-tab">
+                Video Submission
+              </div>
+              <div class="tab-pane fade" id="contact-justified" role="tabpanel" aria-labelledby="contact-tab">
+                CD Submission
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -89,12 +136,10 @@ require_once('../partials/connection.php');
     }
   </script>
 
-
-
   <section>
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Fill in the form</h5>
+        <h5 class="card-title">Fill in the form <span class="text-muted">| Chapter 1 - 5 submission</span></h5>
 
 
         <form class="row g-3" action="../partials/process.php" method="POST" enctype="multipart/form-data">
@@ -161,52 +206,6 @@ require_once('../partials/connection.php');
       </div>
     </div>
   </section>
-
-  <!-- <form class="row g-3 needs-validation container card" id="form2" novalidate>
-    <div class="col-md-4">
-      <h1 class="card-title">
-        Chapter 123
-      </h1>
-      <div class="form-floating">
-        <input type="text" class="form-control" id="Last" placeholder="Last Name" required>
-        <label for="Last">Last Name</label>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-        <div class="invalid-feedback">
-          Enter Last Name!
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="form-floating">
-        <input type="text" class="form-control" id="First" placeholder="First Name" required>
-        <label for="First">First Name</label>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-        <div class="invalid-feedback">
-          Enter First Name!
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="form-floating">
-        <input type="text" class="form-control" id="Middle" placeholder="Middle Name" required>
-        <label for="Middle">Middle Name</label>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-        <div class="invalid-feedback">
-          Enter Middle Name!
-        </div>
-      </div>
-    </div>
-    <div class="text-center mb-2">
-      <button type="submit" class="btn btn-primary">Submit</button>
-      <button type="reset" class="btn btn-secondary">Reset</button>
-    </div>
-  </form> -->
 
 
 </main><!-- End #main -->
