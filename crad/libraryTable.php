@@ -116,7 +116,7 @@ require_once('../partials/connection.php');
                                     <td><?= $items['title']; ?></td>
                                     <td><?= $items['date']; ?></td>
                                     <td>
-                                        <a href="../uploads/<?php echo $items['upload_file']; ?>" target="_blank" class="btn btn-primary btn-sm d-grid"><span><i class="bi bi-folder2-open"></i>Open</span></a>
+                                        <a href="../uploads/<?php echo $items['upload_file']; ?>" target="_blank" class="btn btn-primary btn-sm d-grid"><span><i class="bi bi-folder2-open"></i> Open</span></a>
                                     </td>
                                 </tr>
                             <?php

@@ -194,7 +194,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Major</th>
                     <th scope="col">Experience</th>
-                    <th scope="col">Sample</th>
+                    <th scope="col">Masteral</th>
                     <th scope="col">Status</th>
                   </tr>
                 </thead>

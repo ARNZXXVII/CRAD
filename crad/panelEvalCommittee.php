@@ -45,7 +45,7 @@ require_once('../partials/connection.php');
           <th>Name</th>
           <th>Major</th>
           <th>Experience</th>
-          <th>Sample</th>
+          <th>Masteral</th>
           <th>Status</th>
           <th>Action</th>
         </tr>
@@ -55,6 +55,8 @@ require_once('../partials/connection.php');
         $sql = "SELECT * FROM crad_panel_committee ORDER BY comID DESC";
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
+
+
 
         if ($stmt->rowcount() > 0) {
           while ($row = $stmt->fetch()) {
@@ -67,11 +69,13 @@ require_once('../partials/connection.php');
               <td><?php echo $row['exp']; ?></td>
               <td><?php echo $row['qualification_one']; ?></td>
               <td><?php
-                  if ($row['qualification_one'] == 1) {
+
+                  if ($row['qualification_one'] == "No") {
                     echo '<span class="badge bg-danger">' . "Not Qualified" . '</span>';
                   } else {
                     echo '<span class="badge bg-success">' . "Qualified" . '</span>';
                   }
+
                   ?>
               </td>
               <td>

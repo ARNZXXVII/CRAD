@@ -37,7 +37,7 @@ require_once('../partials/connection.php');
 
 
   <section class="card container">
-    <table class="table table-hover">
+    <table class="table table-hover table-borderless">
       <thead>
         <tr>
           <th>First name</th>

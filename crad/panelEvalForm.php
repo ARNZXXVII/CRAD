@@ -101,12 +101,11 @@ require_once('../partials/connection.php');
         <div class="col-md-4">
           <div class="form-floating mb-3">
             <select class="form-select" id="masters" name="qualification_one" required>
-              <option selected value="">select</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
+              <option selected value="">Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
             </select>
-            <label for="masters">Sample</label>
+            <label for="masters">Masteral</label>
             <div class="valid-feedback">
               Looks good!
             </div>
@@ -117,11 +116,11 @@ require_once('../partials/connection.php');
           <div class="form-floating mb-3">
             <select class="form-select" id="masters2" name="qualification_two" required>
               <option selected value="">select</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
+              <option>IM</option>
+              <option>Security</option>
+              <option>Network</option>
             </select>
-            <label for="masters">major</label>
+            <label for="masters">Major</label>
             <div class="valid-feedback">
               Looks good!
             </div>

@@ -1,21 +1,23 @@
-<?php 
-require_once('db-connect.php');
-if(!isset($_GET['id'])){
+<?php
+require_once('../partials/connection.php');
+
+if (!isset($_GET['id'])) {
     echo "<script> alert('Undefined Schedule ID.'); location.replace('./') </script>";
-    $conn->close();
+    $pdo = null;
     exit;
 }
 
-$delete = $conn->query("DELETE FROM `schedule_list` where id = '{$_GET['id']}'");
-if($delete){
+
+$sql = "DELETE FROM `schedule_list` WHERE id = :id";
+$stmt = $pdo->prepare($sql);
+$stmt->bindParam(':id', $_GET['id'], PDO::PARAM_INT);
+if ($stmt->execute()) {
     echo "<script> alert('Event has deleted successfully.'); location.replace('./') </script>";
-}else{
+} else {
     echo "<pre>";
-    echo "An Error occured.<br>";
-    echo "Error: ".$conn->error."<br>";
-    echo "SQL: ".$sql."<br>";
+    echo "An Error occurred.<br>";
+    echo "Error: " . $stmt->errorInfo()[2] . "<br>";
+    echo "SQL: " . $sql . "<br>";
     echo "</pre>";
 }
-$conn->close();
-
-?>
+$pdo = null;
