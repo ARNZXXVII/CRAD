@@ -68,13 +68,59 @@ require_once('../partials/connection.php');
 
               <!-- Approval form -->
               <div class="tab-pane fade show active" id="home-justified2" role="tabpanel" aria-labelledby="home-tab2">
-                Approval Sheet
+                <div class="card container col-10">
+                  <h1 class="card-title">Submit <span class="text-muted">| Approval Sheet</span></h1>
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="input1" placeholder="Input 1">
+                      <label for="input1">Input 1</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="input2" placeholder="Input 2">
+                      <label for="input2">Input 2</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <select class="form-select" id="dropdown" aria-label="Dropdown">
+                        <option selected>Open this dropdown</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select>
+                      <label for="dropdown">Dropdown</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+
               </div>
               <!-- End Approval form -->
 
               <!-- Chap123 form -->
               <div class="tab-pane fade" id="profile-justified2" role="tabpanel" aria-labelledby="profile-tab2">
-                Chap123
+                <div class="card container col-10">
+                  <h1 class="card-title">Submit <span class="text-muted">| Chapter 123</span></h1>
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="input3" placeholder="Input 3">
+                      <label for="input3">Input 3</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="input4" placeholder="Input 4">
+                      <label for="input4">Input 4</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <select class="form-select" id="dropdown2" aria-label="Dropdown2">
+                        <option selected>Open this dropdown</option>
+                        <option value="option4">Option 4</option>
+                        <option value="option5">Option 5</option>
+                        <option value="option6">Option 6</option>
+                      </select>
+                      <label for="dropdown2">Dropdown 2</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+
               </div>
               <!-- End Chap123 form -->
             </div>
@@ -104,68 +150,63 @@ require_once('../partials/connection.php');
             <div class="tab-content pt-2" id="myTabjustifiedContent">
               <!-- Bookbind form -->
               <div class="tab-pane fade show active" id="home-justified" role="tabpanel" aria-labelledby="home-tab">
-                Bookbind Form
+                <div class="container card col-10">
+                  <h1 class="card-title">Submit <span class="text-muted">| Bookbind</span></h1>
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="name" placeholder="Your name">
+                      <label for="name">Full Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
+                      <label for="email">Email address:</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="phone" name="phone" placeholder="Your phone number">
+                      <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="position" name="position" placeholder="Position you're applying for">
+                      <label for="position">Position Applied For</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" placeholder="Enter your cover letter here" id="cover-letter"></textarea>
+                      <label for="cover-letter">Cover Letter</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+
               </div>
               <!-- End Bookbind form -->
 
               <!-- Research Festival form -->
               <div class="tab-pane fade" id="profile-justified" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="card">
-                  <form action="" method="post">
-                    <div class="card-body">
-                      <h5 class="card-title">Research Festival</h5>
-
-                      <form class="g-3">
-                        <div class="col-md-12">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingName" placeholder="Your Name" fdprocessedid="ffeo2a">
-                            <label for="floatingName">Your Name</label>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-floating">
-                              <input type="email" class="form-control" id="floatingEmail" placeholder="Your Email" fdprocessedid="ihby0q">
-                              <label for="floatingEmail">Your Email</label>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-floating">
-                              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" fdprocessedid="cjm5bj">
-                              <label for="floatingPassword">Password</label>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="col-md-12">
-                              <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingCity" placeholder="City" fdprocessedid="6esdhc">
-                                <label for="floatingCity">City</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-floating mb-3">
-                              <select class="form-select" id="floatingSelect" aria-label="State" fdprocessedid="tduwm">
-                                <option selected="">New York</option>
-                                <option value="1">Oregon</option>
-                                <option value="2">DC</option>
-                              </select>
-                              <label for="floatingSelect">State</label>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="text-center">
-                          <button type="submit" class="btn btn-primary" fdprocessedid="c276vp">Submit</button>
-                          <button type="reset" class="btn btn-secondary" fdprocessedid="70bzl8">Reset</button>
-                        </div>
-                      </form>
-
+                <div class="container card col-10">
+                  <h1 class="card-title">Submit your video entry <span class="text-muted">| Research Festival</span></h1>
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                      <label for="name">Title</label>
                     </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="youtube-link" name="youtube-link" placeholder="Enter YouTube video link...">
+                      <label for="youtube-link">YouTube video link:</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <select class="form-select" id="dropdown" aria-label="Select option">
+                        <option selected>Select option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label for="dropdown">Dropdown</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" placeholder="Enter your message here" id="message"></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
                 </div>
               </div>
@@ -173,7 +214,34 @@ require_once('../partials/connection.php');
 
               <!-- CD form -->
               <div class="tab-pane fade" id="contact-justified" role="tabpanel" aria-labelledby="contact-tab">
-                CD Submission
+                <div class="container card col-10">
+                  <h1 class="card-title">Submit <span class="text-muted">| CD</span></h1>
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="entry-title" placeholder="Entry Title">
+                      <label for="entry-title">Title</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="entry-video-link" name="entry-video-link" placeholder="Enter YouTube video link...">
+                      <label for="entry-video-link">Video Link:</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <select class="form-select" id="entry-category" aria-label="Select category">
+                        <option selected>Select category</option>
+                        <option value="1">Category 1</option>
+                        <option value="2">Category 2</option>
+                        <option value="3">Category 3</option>
+                      </select>
+                      <label for="entry-category">Category</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" placeholder="Enter your description here" id="entry-description"></textarea>
+                      <label for="entry-description">Description</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+
               </div>
               <!-- End CD form -->
             </div>

@@ -37,51 +37,55 @@ include('../partials/connection.php');
     </ol>
   </nav>
 
+
   <section class="card container">
     <h1 class="card-title">Payment Details <span class="text-muted">| Research Defense</span></h1>
-    <table class="table datatable" id="myTable">
-      <thead>
-        <tr>
-          <th>Ref Number</th>
-          <th>Student ID</th>
-          <th>Payment for</th>
-          <th>Payment name</th>
-          <th>Amount</th>
-          <th>Date</th>
-          <th>Status</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php
-        $sql = "SELECT *, payment.reference_no AS colid FROM payment LEFT JOIN payment_type ON payment_type.id=payment.payment_for WHERE payment_for = 9 or payment_for = 10 order by unix_timestamp(payment_date) desc";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
+    <div class="table-responsive">
+      <table class="table datatable" id="myTable">
+        <thead>
+          <tr>
+            <th>Ref Number</th>
+            <th>Student ID</th>
+            <th>Payment for</th>
+            <th>Payment name</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          $sql = "SELECT *, payment.reference_no AS colid, payment.amount AS payment_amount FROM payment LEFT JOIN payment_type ON payment_type.id=payment.payment_for WHERE payment_for = 9 or payment_for = 10 order by unix_timestamp(payment_date) desc";
+          $stmt = $pdo->prepare($sql);
+          $stmt->execute();
 
-        if ($stmt->rowcount() > 0) {
-          while ($row = $stmt->fetch()) {
+          if ($stmt->rowcount() > 0) {
+            while ($row = $stmt->fetch()) {
 
-            // Check if amount is equal to 2000
-            $status = ($row['amount'] == 2000) ? '<span class="badge rounded-pill bg-success"><i class="bi bi-check-circle"></i></span>' : '<span class="badge rounded-pill bg-danger"><i class="bi bi-x-circle"></i></span>';
-        ?>
-            <tr>
-              <td><?php echo $row['reference_no']; ?></td>
-              <td><?php echo $row['student_id']; ?></td>
-              <td><?php echo $row['type']; ?></td>
-              <td><?php echo $row['product_name']; ?></td>
-              <td><?php echo $row['amount']; ?></td>
-              <td><?php echo $row['payment_date']; ?></td>
-              <td><?php echo $status; ?></td>
-              <td>
-                <button class="btn btn-sm btn-primary rounded-pill copy-row">Copy</button>
-              </td>
-            </tr>
-        <?php
+              // Check if amount is equal to 2000
+              $status = ($row['payment_amount'] == 2000) ? '<span class="badge rounded-pill bg-success"><i class="bi bi-check-circle"></i></span>' : '<span class="badge rounded-pill bg-danger"><i class="bi bi-x-circle"></i></span>';
+          ?>
+              <tr>
+                <td><?php echo $row['reference_no']; ?></td>
+                <td><?php echo $row['student_id']; ?></td>
+                <td><?php echo $row['type']; ?></td>
+                <td><?php echo $row['product_name']; ?></td>
+                <td><?php echo $row['payment_amount']; ?></td>
+                <td><?php echo $row['payment_date']; ?></td>
+                <td><?php echo $status; ?></td>
+                <td>
+                  <button class="btn btn-sm btn-primary rounded-pill copy-row"><span><i class="bi bi-arrow-down-circle"></i> Add</span></button>
+
+                </td>
+              </tr>
+          <?php
+            }
           }
-        }
-        ?>
-      </tbody>
-    </table>
+          ?>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <!-- payment report -->
