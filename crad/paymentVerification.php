@@ -1,7 +1,7 @@
 <?php
 include('../partials/connection.php');
 ?>
-<title>OR Checking</title>
+<title>Payment Verification</title>
 <?php include('../partials/crad-head.php'); ?>
 
 <!-- ======= Header ======= -->
@@ -43,9 +43,9 @@ include('../partials/connection.php');
       <thead>
         <tr>
           <th>Ref Number</th>
-          <th>Student Name</th>
           <th>Student ID</th>
           <th>Payment for</th>
+          <th>Payment name</th>
           <th>Amount</th>
           <th>Date</th>
           <th>Status</th>
@@ -54,7 +54,7 @@ include('../partials/connection.php');
       </thead>
       <tbody>
         <?php
-        $sql = "SELECT * FROM crad_sample_payment WHERE payment_for = 'research 1' OR payment_for = 'research 2' ORDER BY payment_date DESC";
+        $sql = "SELECT *, payment.reference_no AS colid FROM payment LEFT JOIN payment_type ON payment_type.id=payment.payment_for WHERE payment_for = 9 or payment_for = 10 order by unix_timestamp(payment_date) desc";
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
 
@@ -66,14 +66,14 @@ include('../partials/connection.php');
         ?>
             <tr>
               <td><?php echo $row['reference_no']; ?></td>
-              <td><?php echo $row['student_name'] ?></td>
               <td><?php echo $row['student_id']; ?></td>
-              <td><?php echo $row['payment_for']; ?></td>
+              <td><?php echo $row['type']; ?></td>
+              <td><?php echo $row['product_name']; ?></td>
               <td><?php echo $row['amount']; ?></td>
               <td><?php echo $row['payment_date']; ?></td>
               <td><?php echo $status; ?></td>
               <td>
-                <button class="btn btn-sm btn-primary copy-row">Copy</button>
+                <button class="btn btn-sm btn-primary rounded-pill copy-row">Copy</button>
               </td>
             </tr>
         <?php
@@ -84,17 +84,18 @@ include('../partials/connection.php');
     </table>
   </section>
 
+  <!-- payment report -->
   <section class="card container">
-    <h1 class="card-title">Payment Report <span class="text-muted">| Research Defense</span></h1>
+    <h1 class="card-title">Payment Confirmation <span class="text-muted">| Research Defense</span></h1>
     <form action="paymentReports.php" method="POST">
       <div id="copiedRowsTable">
-        <table class="table">
+        <table class="table table-borderless">
           <thead>
             <tr>
               <th>Ref Number</th>
-              <th>Student Name</th>
               <th>Student ID</th>
-              <th>Payment for</th>
+              <th>Payment For</th>
+              <th>Payment Name</th>
               <th>Amount</th>
               <th>Date</th>
               <th>Status</th>
@@ -104,7 +105,11 @@ include('../partials/connection.php');
             <!-- You can add table rows dynamically using JavaScript -->
           </tbody>
         </table>
-        <input type="submit" value="Submit" class="btn btn-sm btn-primary col-4">
+
+        <div class="container">
+          <button type="submit" class="btn btn-sm btn-primary rounded-pill col-4 float-end">Submit</button>
+        </div>
+
       </div>
     </form>
   </section>

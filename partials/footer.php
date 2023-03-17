@@ -10,6 +10,11 @@
 <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
 <!-- </div> -->
 <!-- </footer> -->
+<footer id="footer" class="footer">
+  <div class="copyright">
+    &copy; Copyright <strong><span>BCP CRAD</span></strong>. Used for Academic purposes only.
+  </div>
+</footer>
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

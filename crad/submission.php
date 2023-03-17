@@ -48,6 +48,7 @@ require_once('../partials/connection.php');
         <button onclick="showDiv('div1')" class="btn btn-sm btn-primary">First Sem Submission</button>
         <button onclick="showDiv('div2')" class="btn btn-sm btn-primary">Second Sem Submission</button>
       </div>
+
       <div id="div1" style="display: none;" class="col-lg-12">
         <!-- first sem submission -->
 
@@ -62,18 +63,24 @@ require_once('../partials/connection.php');
                 <button class="nav-link w-100" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#profile-justified2" type="button" role="tab" aria-controls="profile" aria-selected="false">Chapter 123</button>
               </li>
             </ul>
+
             <div class="tab-content pt-2" id="myTabjustifiedContent2">
+
+              <!-- Approval form -->
               <div class="tab-pane fade show active" id="home-justified2" role="tabpanel" aria-labelledby="home-tab2">
                 Approval Sheet
               </div>
+              <!-- End Approval form -->
+
+              <!-- Chap123 form -->
               <div class="tab-pane fade" id="profile-justified2" role="tabpanel" aria-labelledby="profile-tab2">
-                Chapter 123
+                Chap123
               </div>
+              <!-- End Chap123 form -->
             </div>
 
           </div>
         </div>
-
       </div>
 
       <div id="div2" style="display: none;" class="col-lg-12">
@@ -95,23 +102,88 @@ require_once('../partials/connection.php');
             </ul>
 
             <div class="tab-content pt-2" id="myTabjustifiedContent">
+              <!-- Bookbind form -->
               <div class="tab-pane fade show active" id="home-justified" role="tabpanel" aria-labelledby="home-tab">
                 Bookbind Form
               </div>
+              <!-- End Bookbind form -->
+
+              <!-- Research Festival form -->
               <div class="tab-pane fade" id="profile-justified" role="tabpanel" aria-labelledby="profile-tab">
-                Video Submission
+                <div class="card">
+                  <form action="" method="post">
+                    <div class="card-body">
+                      <h5 class="card-title">Research Festival</h5>
+
+                      <form class="g-3">
+                        <div class="col-md-12">
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Your Name" fdprocessedid="ffeo2a">
+                            <label for="floatingName">Your Name</label>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-floating">
+                              <input type="email" class="form-control" id="floatingEmail" placeholder="Your Email" fdprocessedid="ihby0q">
+                              <label for="floatingEmail">Your Email</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-floating">
+                              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" fdprocessedid="cjm5bj">
+                              <label for="floatingPassword">Password</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="col-md-12">
+                              <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingCity" placeholder="City" fdprocessedid="6esdhc">
+                                <label for="floatingCity">City</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                              <select class="form-select" id="floatingSelect" aria-label="State" fdprocessedid="tduwm">
+                                <option selected="">New York</option>
+                                <option value="1">Oregon</option>
+                                <option value="2">DC</option>
+                              </select>
+                              <label for="floatingSelect">State</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary" fdprocessedid="c276vp">Submit</button>
+                          <button type="reset" class="btn btn-secondary" fdprocessedid="70bzl8">Reset</button>
+                        </div>
+                      </form>
+
+                    </div>
+                  </form>
+                </div>
               </div>
+              <!-- End Research Festival form -->
+
+              <!-- CD form -->
               <div class="tab-pane fade" id="contact-justified" role="tabpanel" aria-labelledby="contact-tab">
                 CD Submission
               </div>
+              <!-- End CD form -->
             </div>
 
           </div>
         </div>
       </div>
     </div>
-
   </section>
+
   <script>
     var currentDiv = null;
 

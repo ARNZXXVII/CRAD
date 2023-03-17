@@ -72,7 +72,7 @@ require_once('../partials/connection.php');
 
                 <p class="d-inline-block text-truncate" style="max-width: 100%;"><?php echo $row['upload_file']; ?></p>
 
-                <a href="../uploads/<?php echo $row['upload_file']; ?>" target="_blank" class="btn btn-primary btn-sm d-grid">Open</a>
+                <a href="../uploads/<?php echo $row['upload_file']; ?>" target="_blank" class="btn btn-primary btn-sm rounded-pill d-grid">Open</a>
 
 
                 <div class="modal fade" id="disablebackdrop" tabindex="-1">
@@ -82,7 +82,7 @@ require_once('../partials/connection.php');
                         <h5 class="modal-title"><?php echo $row['upload_file']; ?></h5>
                       </div>
                       <div class="modal-footer">
-                        <a href="../uploads/<?php echo $row['upload_file']; ?>" target="_blank" class="btn btn-primary btn-sm">Open</a>
+                        <a href="../uploads/<?php echo $row['upload_file']; ?>" target="_blank" class="btn btn-sm btn-primary rounded-pill">Open</a>
                       </div>
                     </div>
                   </div>
